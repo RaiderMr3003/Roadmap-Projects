@@ -1,1 +1,1 @@
-Este Repositorio es horientado a mejorar mi habilidades como Desarrollador Frontend, siguiendo la guia de estaudio y de projectos de <a href="https://roadmap.sh/projects/">roadmap.sh</a>
+Este Repositorio es horientado a mejorar mi habilidades como Desarrollador Frontend, siguiendo la guia de estaudio y de projectos de <a href="https://roadmap.sh/projects/" target="_blank">roadmap.sh</a>
