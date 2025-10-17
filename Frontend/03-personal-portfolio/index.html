@@ -22,6 +22,7 @@
                 </ul>
             </div>
         </nav>
+        <button id="dark-toggle">🌙 Modo oscuro</button>
     </header>
     <main>
         <section id="hero" class="hero">
@@ -102,3 +103,21 @@
     </footer>
 </body>
 </html>
+
+<script>
+  const toggle = document.getElementById("dark-toggle");
+  const body = document.body;
+
+  // Mantener preferencia guardada
+  if (localStorage.getItem("theme") === "dark") {
+    body.classList.add("dark-mode");
+    toggle.textContent = "☀️ Modo claro";
+  }
+
+  toggle.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+    const dark = body.classList.contains("dark-mode");
+    toggle.textContent = dark ? "☀️ Modo claro" : "🌙 Modo oscuro";
+    localStorage.setItem("theme", dark ? "dark" : "light");
+  });
+</script>

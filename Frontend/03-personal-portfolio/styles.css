@@ -27,7 +27,7 @@ nav .navbar {
 nav .navbar .logo a {
   font-size: 1.2rem;
   font-weight: 600;
-  color: purple;
+  color: rgb(255, 94, 0);
   text-decoration: none;
 }
 
@@ -41,7 +41,7 @@ nav .navbar .menu {
 }
 
 .navbar .menu li a {
-  color: purple;
+  color: rgb(255, 94, 0);
   text-decoration: none;
 }
 
@@ -102,25 +102,45 @@ nav .navbar .menu {
   text-align: center;
 }
 
-#contact {
-  max-width: 400px;
-  margin: auto;
-  font-family: sans-serif;
-}
-
-#contact form {
-  display: flex;
-  flex-direction: column;
-}
-
-#contact label,
-#contact input,
-#contact textarea,
-#contact button {
-  margin-bottom: 0.5rem;
-}
-
 footer {
   text-align: center;
   padding: 1rem;
+}
+
+#dark-toggle {
+  margin: 10px auto;
+  display: block;
+  background: none;
+  border: 1px solid rgb(255, 94, 0);
+  color: rgb(255, 94, 0);
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#dark-toggle:hover {
+  background: rgb(196, 82, 16);
+  color: white;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #e4e4e4;
+}
+
+.dark-mode a {
+  color: #bb86fc;
+}
+
+.dark-mode #hero {
+  background-color: #1e1e1e;
+}
+
+.dark-mode #reviews {
+  background-color: #1a1a1a;
+}
+
+.dark-mode footer {
+  background-color: #1e1e1e;
 }
