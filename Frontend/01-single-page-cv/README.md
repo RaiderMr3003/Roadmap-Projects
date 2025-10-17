@@ -17,7 +17,7 @@ La página final debe tener una estructura clara que muestre:
 - Experiencia laboral 💼  
 
 El diseño de referencia:  
-<img src="https://assets.roadmap.sh/guest/resume-template-zyl70.png" alt="Plantilla del CV" style="max-width: 60%; height: auto;"></a>
+<img src="https://assets.roadmap.sh/guest/resume-template-zyl70.png" alt="Plantilla del CV" width="500"></a>
 ---
 
 ## 🧱 Requisitos Clave
@@ -53,9 +53,9 @@ El diseño de referencia:
 ## 🗂️ Archivos del Proyecto
 
 /
-├── index.html
-├── public/
-│ └── favicon.ico
+├── index.html \
+├── public/ \
+│ └── favicon.ico \
 └── README.md
 
 
@@ -73,7 +73,7 @@ El diseño de referencia:
 ## 👨‍🎓 Autor
 
 **Máximo Mercado Racchumí**  
-Desarrollador en formación | Apasionado por el frontend y el diseño web  
-🌐 [Portafolio (próximamente)](#)
+Desarrollador Web | Apasionado por el frontend y el diseño web  
+🌐 [Portafolio](https://raidermr-portfolio.netlify.app/es)
 
 ---
