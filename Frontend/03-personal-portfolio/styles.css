@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+nav .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+
+nav .navbar .logo a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: purple;
+  text-decoration: none;
+}
+
+nav .navbar .menu {
+  display: flex;
+}
+
+.navbar .menu li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.navbar .menu li a {
+  color: purple;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .navbar .logo {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: center;
+  }
+
+  .navbar .menu {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .navbar .menu li {
+    margin: 0 10px;
+  }
+}
+
+#hero {
+  text-align: center;
+  padding: 7rem;
+  background-color: #f4f4f4;
+}
+
+#main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+
+@media (max-width: 700px) {
+  #main {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  #projects, #experience, #education{
+    justify-items: center;
+  }
+}
+
+#reviews {
+  background-color: #f9f9f9;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+}
+
+#reviews h2 {
+  grid-column: 1 / -1; 
+  text-align: center;
+}
+
+#contact {
+  max-width: 400px;
+  margin: auto;
+  font-family: sans-serif;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact label,
+#contact input,
+#contact textarea,
+#contact button {
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+}
