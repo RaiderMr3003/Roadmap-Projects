@@ -1,0 +1,28 @@
+#hero {
+  text-align: center;
+  padding: 7rem;
+  background-color: #f4f4f4;
+}
+
+#main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+
+#reviews {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+}
+
+#reviews h2 {
+  grid-column: 1 / -1; 
+  text-align: center;
+}
