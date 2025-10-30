@@ -1,0 +1,76 @@
+h1, p{
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.changelog-container {
+    max-width: 550px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    border: #000 2px solid;
+    border-radius: 8px;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 150px;
+    width: 2px; 
+    background: #ccc; 
+}
+
+.timeline-item {
+    position: relative; 
+    padding: 10px 0 10px 180px; 
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 15px; 
+    left: 146px; 
+    width: 10px; 
+    height: 10px; 
+    border-radius: 50%;
+    background: #000;
+    z-index: 1; 
+}
+
+.timeline-date {
+    position: absolute;
+    left: 0;
+    width: 130px; 
+    text-align: right;
+    color: #888;
+    font-size: 0.9em;
+}
+
+.timeline-content {
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .timeline::before {
+        left: 20px;
+    }
+    .timeline-item {
+        padding-left: 60px;
+    }
+    .timeline-item::before {
+        top: 21px;
+        left: 16px;
+    }
+    .timeline-date {
+        position: static;
+        width: auto;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+}
